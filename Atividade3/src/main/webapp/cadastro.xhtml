@@ -9,7 +9,8 @@
 	</h:head>
 	
 	<h:body>
-		<h:form>
+		<h1>Cadastro de usuário</h1>
+		<h:form id="cadastro">
 		    <h:inputText value="#{pessoa.nome}" />
 		    <h:commandButton value="Cadastrar" action="#{pessoa.adicionarNome()}" />
 		    <h:outputText value="Último nome cadastrado: #{pessoa.ultimoNome}" rendered="#{not empty pessoa.ultimoNome}" />
